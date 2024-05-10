@@ -1,0 +1,17 @@
+{
+  "name": "html-css-training",
+  "version": "1.0.0",
+  "description": "- This document provides the list of important technologies that would be used to implement, the objectives to be achieved and the progress of the project.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/pages/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^2.0.1",
+    "sass": "^1.77.0"
+  }
+}
