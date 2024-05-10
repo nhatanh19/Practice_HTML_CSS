@@ -1,1 +1,18 @@
 @use "../abstracts/" as *;
+
+.header-contaiter{
+    display: flex;
+    .header-contaiter_logo{
+        display: flex;
+        .header-contaiter_logo-icon{
+            width: 44px;
+            height: 44px;
+        }
+        .header-contaiter_logo-title{
+            span:last-child{
+                color: blue;
+            }
+        }
+        
+    }
+}
