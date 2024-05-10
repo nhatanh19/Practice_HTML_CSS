@@ -1,42 +1,44 @@
-## OVERVIEW
+### Practice_HTML_CSS
 
-- This document provides the list of important technologies that would be used to implement, the objectives to be achieved and the progress of the project.
+# OVERVIEW
+
+ - This document introduces my project with time to do it, the target i want to get, the technical i have used, the link to view my website and source code of it and the final is the way to run my project on your local machine.
 
 ## TIMELINE:
 
-- 1 days (Oct 15 - Oct 16)
+-  3 Week (May 6 - May 26)
 
 ## TARGET:
 
-- Apply Sass and 7-1 pattern to this practice, it makes the code shorter and more intuitive as well as using variables, code reuse, pseudo classes, calculations...
-- Responsive web design: web design and development will respond to any user's device and environment according to device screen size and size criteria.
+- Applying Sass and the 7-1 pattern to write css more effectively.
+
+- Responsive web design: Make sure that the website can visibility perfectly on all devives.
 
 ## TECHNICAL STACKS
 
 - HTML5/CSS3
+- Sass
 - Parcel
 - Parcel/transformer-sass
-- Posthtml-doctype
 - Posthtml-include
-- Sass
+- Posthtml-doctype
 
 ## WEB DESIGN:
 
-- [Design](https://www.figma.com/file/HGf2Vzkk3YieUGPIpmW7dm/Hofmann-UI-Kit---2?node-id=5033%3A3)
+- [Design](https://www.figma.com/file/RabBdppCXVHlM4LC0L1oSa/360%C2%B0-Agency-Simple-Website-(Community)?type=design&node-id=0-1&mode=design&t=gC3XKt06iHYD17P1-0)
 
 ## SOURCE CODE
 
-- Step1: Clone project : git clone [git](https://github.com/baonguyen26/html-css.git)
+- To start: Clone project : git clone [git](https://github.com/nhatanh19/Practice_HTML_CSS.git)
 
 ## HOW TO RUN
 
-- Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+- Dillinger requires [Node.js](https://nodejs.org/) v20.12.1 + to run.
 
-- Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd html-css
-pnpm i
-pnpm dev
+cd Practice_HTML_CSS
+npm install
+npm run dev
 Open on web: http://localhost:1234
-```
+# Practice_HTML_CSS
