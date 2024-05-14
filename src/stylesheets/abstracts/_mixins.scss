@@ -1,2 +1,12 @@
 @use "variables" as *;
 @use "functions" as *;
+
+
+@mixin styleButton($width, $height){
+    width: $width;
+    height: $height;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    border-width: 0;
+}
