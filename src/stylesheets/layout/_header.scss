@@ -1,5 +1,6 @@
 @use "../abstracts/" as *;
 
+<<<<<<< HEAD
 *{
     font-family: 'Poppins';
     font-size: 16px;
@@ -56,5 +57,21 @@ nav{
     align-items: center;
     .header-contaiter_user-login{
         margin-left: 20px;
+=======
+.header-contaiter{
+    display: flex;
+    .header-contaiter_logo{
+        display: flex;
+        .header-contaiter_logo-icon{
+            width: 44px;
+            height: 44px;
+        }
+        .header-contaiter_logo-title{
+            span:last-child{
+                color: blue;
+            }
+        }
+        
+>>>>>>> 0e281216c8badcf3c6182f83cb56541ea35b32c4
     }
 }
