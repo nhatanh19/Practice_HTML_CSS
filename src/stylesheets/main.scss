@@ -1,6 +1,5 @@
-
-@use "layout/" as *; // ghép tất cả các file scss nằm trong thư mục layout vào file main.scss
-@use "components";
 @use "base";
+@use "components";
+@use "layout/" as *;
+@use "pages";
 @use "abstracts";
-//@use "pages"; // ghép các file scss có tên là pages vào main.scss
