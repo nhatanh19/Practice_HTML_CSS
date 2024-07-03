@@ -7,58 +7,138 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    
-    
-}
 
-.header-contaiter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header{
     width: 100%;
-    height: 95px;
-    
-    
-    .header-contaiter_logo{
-        margin-left: 120px;
-        .header-contaiter_logo-a{
-            color: black;
-            display: flex;
-            cursor: none;
-            text-decoration: none;
-            .header-contaiter_logo-icon{
-                width: 44px;
-                height: 44px;
-            }
-            .header-contaiter_logo-title{
-                margin: auto;
-                margin-left: 14px;
-                span:last-child{
-                    color: blue;
+    height: 853px;
+    background-image: linear-gradient(0, white,  rgba(222, 219, 219, 0.749)), url(../assets/images/desktop/Background-home.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    // Contaiter
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 95px;
+        background-color: #f5f0f0;
+        
+        
+        .header-container_logo{
+            margin-left: 120px;
+            .header-container_logo-a{
+                color: black;
+                display: flex;
+                cursor: none;
+                text-decoration: none;
+                .header-container_logo-icon{
+                    width: 44px;
+                    height: 44px;
+                }
+                .header-container_logo-title{
+                    margin: auto;
+                    margin-left: 14px;
+                    span:last-child{
+                        color: blue;
+                    }
                 }
             }
         }
+        nav{
+            margin-left: 200px;
+            ul{
+                display: flex;
+                list-style-type: none;
+                width: 100%;
+                li{
+                    margin-left: 40px;
+                }
+            }
+        }
+        
+        .header-container_user{
+            padding-right: 120px;
+            display: flex;
+            align-items: center;
+            .header-container_user-login{
+                margin-left: 20px;
+            }
+        }
+        
     }
-}
 
-nav{
-    margin-left: 200px;
-    ul{
-        display: flex;
-        list-style-type: none;
-        width: 100%;
-        li{
-            margin-left: 40px;
+
+    // Main
+    .header-main{
+        .header-main__title--top{
+            width: 732px;
+            height: 333px;
+            padding: 68px 0;
+            margin: 0 auto;
+            text-align: center;
+            
+            .text-blue{
+                color: blue;
+                font-size: clamp( 3rem, 4vw, 4rem);
+            }
+            h1{
+                font-size: clamp( 3rem, 4vw, 4rem);
+            }
+
+            p{
+                margin: 30px 7.5px;
+                font-weight: 100;
+            }
+
+            button{
+                width: 189px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: blue;
+                color: #fff;
+                display: flex;
+                margin: 0 auto;
+                p{
+                    padding: 0;
+                    margin: auto 10px auto 20px;
+                }
+
+                img{
+                    @include size(20px, 20px);
+                    margin: auto 5px auto 0;
+                }
+            }
+        }
+
+        .header-main__image-bg--bottom{
+            height: 586px;  
+            margin: 68px auto 0 auto;
+            width: 1177px;
+            position: relative;
+
+            @include tablet{
+                width: 904px;
+                height: 530px;
+            }
+
+            .image-bg--top{
+                height: 530px;
+                background-image: url("./../assets/images/desktop/Background-home.png");
+                background-repeat: no-repeat;
+                border-radius: 12px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .image-bg--bottom{
+                position: absolute;
+                right: 0;
+                margin-top: 5px;
+            }
         }
     }
 }
 
-.header-contaiter_user{
-    padding-right: 120px;
-    display: flex;
-    align-items: center;
-    .header-contaiter_user-login{
-        margin-left: 20px;
-    }
-}
+
+
