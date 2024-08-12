@@ -10,10 +10,11 @@
 
 header{
     width: 100%;
-    height: 853px;
+    height: pxToRem(853);
     background-image: linear-gradient(0, white,  rgba(222, 219, 219, 0.749)), url(../assets/images/desktop/Background-home.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
     // Contaiter
     .header-container{
@@ -21,24 +22,27 @@ header{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 95px;
+        height: pxToRem(95);
         background-color: #f5f0f0;
+
+        
         
         
         .header-container_logo{
-            margin-left: 120px;
+            // margin-left: 120px;
+            margin-left: 12%;
             .header-container_logo-a{
                 color: black;
                 display: flex;
                 cursor: none;
                 text-decoration: none;
                 .header-container_logo-icon{
-                    width: 44px;
-                    height: 44px;
+                    width: pxToRem(44);
+                    height: pxToRem(44);
                 }
                 .header-container_logo-title{
                     margin: auto;
-                    margin-left: 14px;
+                    margin-left: pxToRem(14);
                     span:last-child{
                         color: blue;
                     }
@@ -46,23 +50,27 @@ header{
             }
         }
         nav{
-            margin-left: 200px;
+            margin-left: pxToRem(200);
             ul{
                 display: flex;
                 list-style-type: none;
                 width: 100%;
                 li{
-                    margin-left: 40px;
+                    margin-left: pxToRem(40);
                 }
             }
         }
         
         .header-container_user{
-            padding-right: 120px;
+            padding-right: pxToRem(120);
             display: flex;
             align-items: center;
+            img{
+                visibility: hidden;
+            }
+
             .header-container_user-login{
-                margin-left: 20px;
+                margin-left: pxToRem(20);
             }
         }
         
@@ -72,9 +80,9 @@ header{
     // Main
     .header-main{
         .header-main__title--top{
-            width: 732px;
-            height: 333px;
-            padding: 68px 0;
+            width: pxToRem(732);
+            height: pxToRem(333);
+            padding: pxToRem(68) 0;
             margin: 0 auto;
             text-align: center;
             
@@ -87,13 +95,13 @@ header{
             }
 
             p{
-                margin: 30px 7.5px;
+                margin: pxToRem(30) pxToRem(7.5);
                 font-weight: 100;
             }
 
             button{
-                width: 189px;
-                height: 50px;
+                width: pxToRem(189);
+                height: pxToRem(50);
                 border-radius: 50px;
                 background-color: blue;
                 color: #fff;
@@ -101,7 +109,7 @@ header{
                 margin: 0 auto;
                 p{
                     padding: 0;
-                    margin: auto 10px auto 20px;
+                    margin: auto pxToRem(10) auto pxToRem(20);
                 }
 
                 img{
@@ -112,18 +120,19 @@ header{
         }
 
         .header-main__image-bg--bottom{
-            height: 586px;  
-            margin: 68px auto 0 auto;
-            width: 1177px;
+            height: pxToRem(586);  
+            margin: pxToRem(68) auto 0 auto;
+            width: pxToRem(1177);
             position: relative;
 
             @include tablet{
-                width: 904px;
-                height: 530px;
+                width: pxToRem(904);
+                height: pxToRem(530);
             }
 
             .image-bg--top{
-                height: 530px;
+                height: pxToRem(530);
+                width: 100%;
                 background-image: url("./../assets/images/desktop/Background-home.png");
                 background-repeat: no-repeat;
                 border-radius: 12px;
@@ -137,6 +146,83 @@ header{
                 margin-top: 5px;
             }
         }
+    }
+
+    // Responsive Mobile
+    @include mobile{
+        .header-container_menu{
+            display: none;
+        }
+
+        .header-container_user {
+            button{
+                display: none;
+            }
+            img{
+                visibility: visible !important;
+                width: 40px;
+                height: 40px;
+                margin-left: 40%;
+            }
+            .header-container_user-language{
+                padding-left: 80%;
+            }
+        }
+
+        .header-main{
+            .header-main__title--top{
+                width: auto;
+
+                h1 , .text-blue{
+                    font-size: 2rem;
+                }
+                
+            }
+
+            .header-main__image-bg--bottom{
+                width: auto;
+                .image-bg--top{
+                    height: auto;
+                    width: 90%;
+                }
+                .image-bg--bottom{
+                    right: 5%;
+                }
+            }
+        }
+        
+    }
+
+    // Responsive Tablet
+    @include tablet{
+        .header-container {
+            nav{
+                margin-left: 0;
+                ul li{
+                    margin-left: 0;
+                    padding-right: 5%;
+                }
+            }
+            
+            .header-container_user{
+                padding-right: 1rem;
+                img{
+                    display: none;
+                }
+            }
+
+
+            .header-container_logo{
+                margin-left: 1.2rem;
+            }
+
+            .header-container_menu{
+                display: block;
+                width: 50%;
+            }
+        }
+
+        
     }
 }
 
