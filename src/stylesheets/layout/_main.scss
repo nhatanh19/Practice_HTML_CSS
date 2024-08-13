@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+
+main{
+    .text-blue{
+        color: $color-main;
+    }
+    .Working_process{
+        .Working_process-title{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                font-family: $medium-font;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: $min-font;
+                width: 710px;
+                margin-top: 20px;
+            }
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    
+        .Working_process-list{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 60px;
+            padding: 0 10%;
+            h3{
+                font-family: $medium-font;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+            p{
+                font-family: $min-font;
+                width: 344px;
+                margin-top: 20px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    
+}
